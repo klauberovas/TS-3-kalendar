@@ -32,24 +32,6 @@ const renderCalendar = (items: Items[]): void => {
     dayElm.innerHTML += `
     <div class="${itemClass}" style="${itemStyle}">${name} ${start.hour}:${start.minutes}</div>
     `;
-
-    // if (item.role === 'task') {
-    //   dayElm.innerHTML += `
-    //   <div class="calendar-item item-task ${
-    //     item.isDone ? 'task-done' : null
-    //   }" style="margin-top:${Number(item.start.hour) * 60}px; height: auto">${
-    //     item.name
-    //   } ${item.start.hour}:${item.start.minutes}</div>
-    //   `;
-    // } else {
-    //   dayElm.innerHTML += `
-    //   <div class="calendar-item item-event" style="margin-top:${
-    //     Number(item.start.hour) * 60
-    //   }px; height: ${item.duration}px">${item.name} ${item.start.hour}:${
-    //     item.start.minutes
-    //   }</div>
-    //   `;
-    // }
   });
 };
 
